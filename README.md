@@ -1,36 +1,154 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Starter Template
 
-## Getting Started
+A modern, feature-rich starter template built with Next.js, Tailwind CSS, and shadcn/ui components. This template provides a solid foundation for building beautiful, responsive web applications with a focus on developer experience and modern UI patterns.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js 14** - React framework with App Router, SSR, and optimized performance
+- **Tailwind CSS** - Utility-first CSS framework for rapid UI development
+- **shadcn/ui** - Beautiful, accessible, and customizable React components
+- **TypeScript Ready** - Full TypeScript support for better development experience
+- **Responsive Design** - Mobile-first approach with responsive layouts
+- **Dark Mode Support** - Built-in dark/light theme switching
+- **Interactive Components** - Pre-built forms, cards, and UI elements
+- **Modern Styling** - Gradient backgrounds, smooth animations, and contemporary design
+
+## 🛠️ Tech Stack
+
+### Core Framework
+- **Next.js** - React framework for production
+- **React** - JavaScript library for building user interfaces
+- **TypeScript** - Typed superset of JavaScript
+
+### Styling & UI
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - Component library built on Radix UI
+- **Lucide React** - Beautiful & consistent icon toolkit
+
+### Development Tools
+- **ESLint** - Code linting and quality assurance
+- **PostCSS** - CSS processing tool
+
+## 📦 Components Included
+
+The template includes pre-configured shadcn/ui components:
+
+- `Button` - Interactive button components with variants
+- `Card` - Flexible content containers
+- `Input` - Form input fields with validation
+- `Label` - Accessible form labels
+- `Badge` - Status and category indicators
+- `Alert` - Notification and status messages
+- `Tabs` - Tabbed interface components
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm, yarn, or pnpm
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd <your-repo-name>
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
+
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## 🎯 Project Structure
+
+```
+├── components/
+│   └── ui/              # shadcn/ui components
+├── app/
+│   ├── globals.css      # Global styles
+│   ├── layout.tsx       # Root layout
+│   └── page.tsx         # Home page
+├── lib/
+│   └── utils.ts         # Utility functions
+├── public/              # Static assets
+├── tailwind.config.js   # Tailwind configuration
+├── components.json      # shadcn/ui configuration
+└── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Customization
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Adding New Components
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To add more shadcn/ui components:
 
-## Learn More
+```bash
+npx shadcn-ui@latest add [component-name]
+```
 
-To learn more about Next.js, take a look at the following resources:
+Popular components to consider:
+- `dialog` - Modal dialogs
+- `dropdown-menu` - Dropdown menus
+- `toast` - Notification toasts
+- `sheet` - Slide-out panels
+- `table` - Data tables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Styling
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The template uses Tailwind CSS for styling. Key configuration files:
+- `tailwind.config.js` - Tailwind configuration
+- `app/globals.css` - Global styles and CSS variables
+- `components.json` - shadcn/ui theme configuration
 
-## Deploy on Vercel
+### Dark Mode
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Dark mode is configured and ready to use. Toggle between themes using the `dark` class on the root element.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📱 Responsive Design
+
+The template is built with a mobile-first approach:
+- **Mobile**: Base styles
+- **Tablet**: `md:` prefix (768px+)
+- **Desktop**: `lg:` prefix (1024px+)
+- **Large Desktop**: `xl:` prefix (1280px+)
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- **Template Generated by**: [Claude (Anthropic)](https://claude.ai) - AI assistant that helped create this comprehensive starter template
+
+## 📞 Support
+
+If you have any questions or need help with this template:
+
+1. Check the [Next.js Documentation](https://nextjs.org/docs)
+2. Visit [shadcn/ui Documentation](https://ui.shadcn.com)
+3. Review [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+4. Open an issue in this repository
+
+---
+
+**Happy coding! 🎉**
+
+> Built with ❤️ using Next.js, Tailwind CSS, and shadcn/ui
