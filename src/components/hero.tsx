@@ -41,7 +41,7 @@ const Hero = () => {
               {/* Greeting */}
               <div className="animate-fade-in-up opacity-0" style={{ animationDelay: "0.2s" }}>
                 <p className="text-base sm:text-lg lg:text-xl text-gray-900 font-medium">
-                  Hi, I'm
+                  Hi, I&apos;m
                 </p>
               </div>
 

@@ -290,7 +290,7 @@ const Projects = () => {
                         <Quote className="w-8 h-8 text-blue-600 mx-auto mb-4" />
                         
                         <p className="text-lg text-gray-700 leading-relaxed mb-6 italic">
-                          "{partner.review}"
+                          &quot;{partner.review}&quot;
                         </p>
                         
                         <div className="flex items-center justify-center space-x-3">
