@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { 
-  Calendar, 
-  MapPin, 
-  Mail, 
-  Phone, 
+import {
+  Calendar,
+  MapPin,
+  Mail,
+  Phone,
   GraduationCap,
   Code2,
   Database,
@@ -78,8 +78,8 @@ const About = () => {
             {/* Description */}
             <div className="space-y-6">
               <p className="text-lg text-gray-700 leading-relaxed text-justify">
-                Software Engineer with over 3 years of experience in developing web, mobile, and desktop applications. 
-                Skilled in modern frameworks and tools, passionate about creating user-centric solutions and solving 
+                Software Engineer with over 3 years of experience in developing web, mobile, and desktop applications.
+                Skilled in modern frameworks and tools, passionate about creating user-centric solutions and solving
                 complex technical challenges.
               </p>
             </div>
@@ -92,28 +92,28 @@ const About = () => {
                   <Calendar className="w-5 h-5 text-blue-600" />
                   <div>
                     <p className="text-sm text-gray-500">Birth Date</p>
-                    <p className="text-gray-900 font-medium">January 15, 1995</p>
+                    <p className="text-gray-900 font-medium">October 20, 2001</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-5 h-5 text-blue-600" />
                   <div>
                     <p className="text-sm text-gray-500">Location</p>
-                    <p className="text-gray-900 font-medium">Jakarta, Indonesia</p>
+                    <p className="text-gray-900 font-medium">Karawang, Indonesia</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-blue-600" />
                   <div>
                     <p className="text-sm text-gray-500">Email</p>
-                    <p className="text-gray-900 font-medium">john.doe@email.com</p>
+                    <p className="text-gray-900 font-medium">fahleviafghani21@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-blue-600" />
                   <div>
                     <p className="text-sm text-gray-500">Phone</p>
-                    <p className="text-gray-900 font-medium">+62 812-3456-7890</p>
+                    <p className="text-gray-900 font-medium">+62 878-4411-5199</p>
                   </div>
                 </div>
               </div>
@@ -123,15 +123,22 @@ const About = () => {
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Education</h3>
               <div className="space-y-4">
-                                 <div className="bg-white p-6 rounded-lg border border-gray-100">
+                <div className="bg-white p-6 rounded-lg border border-gray-100">
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
                       <GraduationCap className="w-6 h-6 text-blue-600" />
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-lg font-semibold text-gray-900">Bachelor of Computer Science</h4>
-                      <p className="text-blue-600 font-medium">University of Technology</p>
-                      <p className="text-gray-500 text-sm">2013 - 2017</p>
+                      <h4 className="text-lg font-semibold text-gray-900">Bachelor of Information Systems</h4>
+                      <div className='flex flex-wrap gap-2'>
+                        <p className="text-blue-600 font-medium">University Bina Sarana Informatika</p>
+                        <span
+                          className="px-2 py-1 bg-gray-100 text-dark-700 rounded-full text-xs font-bold"
+                        >
+                          GPA : 3.9/4.0
+                        </span>
+                      </div>
+                      <p className="text-gray-500 text-sm">2018 - 2024</p>
                       <ul className="mt-3 space-y-1">
                         <li className="flex items-start space-x-2">
                           <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
@@ -170,11 +177,11 @@ const About = () => {
               {techStack.map((tech, index) => {
                 const IconComponent = tech.icon;
                 return (
-                                     <div
-                     key={tech.name}
-                     className="bg-white p-4 rounded-lg border border-gray-100 hover:scale-105 transition-all duration-300 group"
-                     style={{ animationDelay: `${0.6 + index * 0.1}s` }}
-                   >
+                  <div
+                    key={tech.name}
+                    className="bg-white p-4 rounded-lg border border-gray-100 hover:scale-105 transition-all duration-300 group"
+                    style={{ animationDelay: `${0.6 + index * 0.1}s` }}
+                  >
                     <div className="flex flex-col items-center space-y-3">
                       <div className={`w-12 h-12 ${tech.color} rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                         <IconComponent className="w-6 h-6" />
@@ -188,8 +195,8 @@ const About = () => {
               })}
             </div>
 
-                         {/* Current Learning Interests */}
-             <div className="bg-white p-6 rounded-lg border border-gray-100">
+            {/* Current Learning Interests */}
+            <div className="bg-white p-6 rounded-lg border border-gray-100">
               <h4 className="text-lg font-semibold text-gray-900 mb-4">Currently Learning</h4>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">

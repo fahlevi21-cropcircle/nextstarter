@@ -29,7 +29,7 @@ const Hero = () => {
     <section
       id="home"
       ref={heroRef}
-      className="min-h-screen flex md:items-center justify-center relative bg-white pt-16 lg:pt-0"
+      className="min-h-screen flex md:items-center justify-between relative bg-white pt-16 lg:pt-0"
     >
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,8 +47,8 @@ const Hero = () => {
 
               {/* Name */}
               <div className="animate-fade-in-up opacity-0" style={{ animationDelay: "0.4s" }}>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-blue-600 mb-3 lg:mb-4 leading-tight">
-                  / John Doe /
+                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-blue-600 mb-3 lg:mb-4 leading-tight">
+                  / Fahlevi Afghani /
                 </h1>
               </div>
 
@@ -63,7 +63,7 @@ const Hero = () => {
             {/* Social Media Section */}
             <div className="animate-fade-in-up opacity-0" style={{ animationDelay: "0.8s" }}>
               <p className="text-sm sm:text-base lg:text-lg text-gray-900 mb-3">
-                Follow me on
+                Find me on
               </p>
               <div className="flex space-x-3">
                 <a
@@ -113,24 +113,24 @@ const Hero = () => {
               <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 lg:-top-6 lg:-right-6 bg-white shadow-lg rounded-lg px-2 py-1 sm:px-3 sm:py-2 lg:px-4 lg:py-3 border border-gray-100">
                 <div className="flex items-center space-x-1 sm:space-x-2">
                   <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-600 rounded-full"></div>
-                  <span className="text-xs sm:text-sm lg:text-base font-medium text-gray-700">Developer</span>
-                  <span className="text-xs text-gray-500">+5 years</span>
+                  <span className="text-xs sm:text-sm lg:text-base font-medium text-gray-700">Web Developer</span>
+                  <span className="text-xs text-gray-500">3 years</span>
                 </div>
               </div>
 
               <div className="absolute -top-2 -left-2 sm:-top-4 sm:-left-4 lg:-top-6 lg:-left-6 bg-white shadow-lg rounded-lg px-2 py-1 sm:px-3 sm:py-2 lg:px-4 lg:py-3 border border-gray-100">
                 <div className="flex items-center space-x-1 sm:space-x-2">
                   <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-600 rounded-full"></div>
-                  <span className="text-xs sm:text-sm lg:text-base font-medium text-gray-700">Engineer</span>
-                  <span className="text-xs text-gray-500">+3 years</span>
+                  <span className="text-xs sm:text-sm lg:text-base font-medium text-gray-700">Mobile Developer</span>
+                  <span className="text-xs text-gray-500">2 years</span>
                 </div>
               </div>
 
               <div className="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 lg:-bottom-6 lg:-left-6 bg-white shadow-lg rounded-lg px-2 py-1 sm:px-3 sm:py-2 lg:px-4 lg:py-3 border border-gray-100">
                 <div className="flex items-center space-x-1 sm:space-x-2">
                   <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-600 rounded-full"></div>
-                  <span className="text-xs sm:text-sm lg:text-base font-medium text-gray-700">Designer</span>
-                  <span className="text-xs text-gray-500">+2 years</span>
+                  <span className="text-xs sm:text-sm lg:text-base font-medium text-gray-700">Full Stack Developer</span>
+                  <span className="text-xs text-gray-500">3 years</span>
                 </div>
               </div>
             </div>

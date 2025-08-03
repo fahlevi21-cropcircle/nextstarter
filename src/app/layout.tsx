@@ -8,10 +8,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "John Doe - Full Stack Developer & UI/UX Designer",
-  description: "Professional portfolio of John Doe, a Full Stack Developer and UI/UX Designer specializing in modern web applications and user-centered design.",
+  title: "Fahlevi Afghani - Software Engineer",
+  description: "Professional portfolio of Cropcircle - Fahlevi Afghani, a Full Stack Developer and UI/UX Designer specializing in modern web applications and user-centered design.",
   keywords: ["Full Stack Developer", "UI/UX Designer", "Web Development", "React", "Next.js", "Portfolio"],
-  authors: [{ name: "John Doe" }],
+  authors: [{ name: "Cropcircle - Fahlevi Afghani" }],
   viewport: "width=device-width, initial-scale=1",
 };
 
