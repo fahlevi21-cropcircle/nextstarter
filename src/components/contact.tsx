@@ -113,7 +113,7 @@ const Contact = () => {
                 Get In Touch
               </h2>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-                Ready to start a project or have a question? I&apos;d love to hear from you.
+                Ready to start a project or have a question? I'd love to hear from you.
               </p>
               <div className="w-20 h-1 bg-blue-600 rounded-full mx-auto mt-6"></div>
             </div>
@@ -123,10 +123,10 @@ const Contact = () => {
               <div className="space-y-8 animate-fade-in-up opacity-0" style={{ animationDelay: "0.4s" }}>
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                    Let&apos;s Connect
+                    Let's Connect
                   </h3>
                   <p className="text-gray-600 leading-relaxed mb-8">
-                    I&apos;m always open to discussing new opportunities, interesting projects, 
+                    I'm always open to discussing new opportunities, interesting projects, 
                     or just having a chat about technology and development.
                   </p>
                 </div>
@@ -161,8 +161,8 @@ const Contact = () => {
                     <span className="font-semibold text-green-800">Available for new opportunities</span>
                   </div>
                   <p className="text-green-700 text-sm">
-                    I&apos;m currently accepting new projects and collaborations. 
-                    Let&apos;s discuss how we can work together!
+                    I'm currently accepting new projects and collaborations. 
+                    Let's discuss how we can work together!
                   </p>
                 </div>
               </div>
@@ -257,7 +257,7 @@ const Contact = () => {
                     {submitStatus === "success" && (
                       <div className="flex items-center space-x-2 p-4 bg-green-50 border border-green-200 rounded-xl">
                         <CheckCircle className="w-5 h-5 text-green-600" />
-                        <span className="text-green-800">Message sent successfully! I&apos;ll get back to you soon.</span>
+                        <span className="text-green-800">Message sent successfully! I'll get back to you soon.</span>
                       </div>
                     )}
 
@@ -280,9 +280,9 @@ const Contact = () => {
         <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="mb-8">
-              <h3 className="text-2xl font-bold mb-4">Let&apos;s Build Something Amazing Together</h3>
+              <h3 className="text-2xl font-bold mb-4">Let's Build Something Amazing Together</h3>
               <p className="text-gray-400 max-w-2xl mx-auto">
-                I&apos;m passionate about creating innovative solutions and bringing ideas to life. 
+                I'm passionate about creating innovative solutions and bringing ideas to life. 
                 Whether you have a project in mind or just want to connect, I'd love to hear from you.
               </p>
             </div>
