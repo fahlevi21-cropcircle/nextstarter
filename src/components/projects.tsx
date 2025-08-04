@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { 
-  ExternalLink, 
-  Github, 
+import {
+  ExternalLink,
+  Github,
   Star,
   Quote,
   ChevronLeft,
@@ -35,57 +35,63 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A comprehensive e-commerce solution built with Next.js, featuring advanced product management, secure payment processing, and real-time inventory tracking.",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "MongoDB"],
+      title: "Vigenesia",
+      description: "Front-end for Vigenesia project with Flutter for Universitas Bina Sarana Informatika (Learning Purpose)",
+      technologies: ["Flutter", "Laravel", "Bootstrap", "PHP"],
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
       liveUrl: "#",
       githubUrl: "#",
+      ready: false,
       rating: 4.8
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, team collaboration features, and progress tracking.",
-      technologies: ["React", "Node.js", "Socket.io", "PostgreSQL", "Redis"],
+      title: "Film Circle",
+      description: "A film news platform that delivers the latest movie updates using TheMovieDatabase API, with dynamic content, search functionality, and responsive design.",
+      technologies: ["Java", "Android", "API"],
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
       liveUrl: "#",
       githubUrl: "#",
+      ready: false,
       rating: 4.6
     },
     {
       title: "Portfolio Website",
-      description: "A modern, responsive portfolio website showcasing professional work with smooth animations and clean design.",
-      technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"],
+      description: "A personal portfolio website to showcase projects, skills, and experience with responsive design, smooth animations, and contact integration.",
+      technologies: ["NextJS", "Tailwind CSS", "Shadcn/UI", "TypeScript"],
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop",
       liveUrl: "#",
       githubUrl: "#",
+      ready: false,
       rating: 4.9
     },
     {
-      title: "Weather Dashboard",
-      description: "A weather application with real-time data, location-based forecasts, and interactive weather maps.",
-      technologies: ["React", "OpenWeather API", "Chart.js", "Geolocation API"],
+      title: "Modern ERP",
+      description: "A fully modern ERP system with integrated modules for inventory, finance, HR, and sales, ETC., built using a modern tech stack and responsive design",
+      technologies: ["NextJS", "C#", "ASP.NET", "SQL Server", "Docker"],
       image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&h=600&fit=crop",
       liveUrl: "#",
       githubUrl: "#",
+      ready: false,
       rating: 4.7
     },
     {
-      title: "Blog Platform",
-      description: "A full-featured blog platform with content management, user authentication, and SEO optimization.",
-      technologies: ["Next.js", "Prisma", "PostgreSQL", "NextAuth", "MDX"],
+      title: "Budget Management",
+      description: "A budget management app for tracking income, expenses, and savings goals with real-time analytics, intuitive UI, and cross-platform support",
+      technologies: ["NextJS", "Prisma", "PostgreSQL", "NextAuth", "MDX"],
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop",
       liveUrl: "#",
       githubUrl: "#",
+      ready: false,
       rating: 4.5
     },
     {
-      title: "Chat Application",
-      description: "A real-time chat application with group messaging, file sharing, and user presence indicators.",
-      technologies: ["React", "Socket.io", "Express", "MongoDB", "AWS S3"],
+      title: "Temperature Monitoring",
+      description: "An IoT-based temperature monitoring system that collects real-time data from sensors, provides alerts, and displays trends through a web dashboard and mobile app",
+      technologies: ["C++", "Arduino UNO", "ASP.NET", "NextJS"],
       image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=800&h=600&fit=crop",
       liveUrl: "#",
       githubUrl: "#",
+      ready: false,
       rating: 4.8
     }
   ];
@@ -147,7 +153,7 @@ const Projects = () => {
           {/* Section Title */}
           <div className="text-center animate-fade-in-up opacity-0" style={{ animationDelay: "0.2s" }}>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              My Projects
+              My Open Source Projects
             </h2>
             <div className="w-20 h-1 bg-blue-600 rounded-full mx-auto"></div>
           </div>
@@ -156,11 +162,11 @@ const Projects = () => {
           <div className="animate-fade-in-up opacity-0" style={{ animationDelay: "0.3s" }}>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {projects.map((project, index) => (
-                                 <div
-                   key={project.title}
-                   className="bg-gray-50 rounded-xl border border-gray-100 overflow-hidden"
-                   style={{ animationDelay: `${0.4 + index * 0.1}s` }}
-                 >
+                <div
+                  key={project.title}
+                  className="bg-gray-50 rounded-xl border border-gray-100 overflow-hidden"
+                  style={{ animationDelay: `${0.4 + index * 0.1}s` }}
+                >
                   {/* Project Image */}
                   <div className="relative h-48">
                     <img
@@ -189,7 +195,7 @@ const Projects = () => {
                     <p className="text-sm text-gray-700 leading-relaxed mb-4 line-clamp-3">
                       {project.description}
                     </p>
-                    
+
                     {/* Technologies */}
                     <div className="mb-4">
                       <div className="flex flex-wrap gap-1">
@@ -252,7 +258,7 @@ const Projects = () => {
               >
                 <ChevronLeft className="w-5 h-5 text-gray-600" />
               </button>
-              
+
               <button
                 onClick={nextReview}
                 className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors duration-300"
@@ -262,7 +268,7 @@ const Projects = () => {
 
               {/* Reviews */}
               <div className="overflow-hidden">
-                <div 
+                <div
                   className="flex transition-transform duration-500 ease-in-out"
                   style={{ transform: `translateX(-${currentReview * 100}%)` }}
                 >
@@ -277,22 +283,21 @@ const Projects = () => {
                             {[...Array(5)].map((_, i) => (
                               <Star
                                 key={i}
-                                className={`w-5 h-5 ${
-                                  i < partner.rating
-                                    ? "text-yellow-400 fill-current"
-                                    : "text-gray-300"
-                                }`}
+                                className={`w-5 h-5 ${i < partner.rating
+                                  ? "text-yellow-400 fill-current"
+                                  : "text-gray-300"
+                                  }`}
                               />
                             ))}
                           </div>
                         </div>
-                        
+
                         <Quote className="w-8 h-8 text-blue-600 mx-auto mb-4" />
-                        
+
                         <p className="text-lg text-gray-700 leading-relaxed mb-6 italic">
                           "{partner.review}"
                         </p>
-                        
+
                         <div className="flex items-center justify-center space-x-3">
                           <img
                             src={partner.logo}
@@ -316,9 +321,8 @@ const Projects = () => {
                   <button
                     key={index}
                     onClick={() => setCurrentReview(index)}
-                    className={`w-2 h-2 rounded-full transition-colors duration-300 ${
-                      index === currentReview ? "bg-blue-600" : "bg-gray-300"
-                    }`}
+                    className={`w-2 h-2 rounded-full transition-colors duration-300 ${index === currentReview ? "bg-blue-600" : "bg-gray-300"
+                      }`}
                   />
                 ))}
               </div>

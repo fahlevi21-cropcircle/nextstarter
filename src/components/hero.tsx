@@ -29,15 +29,15 @@ const Hero = () => {
     <section
       id="home"
       ref={heroRef}
-      className="min-h-screen flex md:items-center justify-between relative bg-white pt-16 lg:pt-0"
+      className="min-h-screen flex md:items-center justify-between md:justify-center relative bg-white pt-16 pb-4 lg:pt-0"
     >
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-20 xl:gap-32 items-center">
+        <div className="grid lg:grid-cols-2 gap-18 lg:gap-20 xl:gap-32 items-center md:justify-center">
           {/* Left Column - Text and Social Media */}
-          <div className="flex flex-col justify-between h-full lg:h-auto space-y-6 lg:space-y-8 max-w-md lg:max-w-lg">
+          <div className="flex flex-col justify-between h-full lg:h-auto space-y-3 lg:space-y-8 max-w-md lg:max-w-lg">
             {/* Text Content */}
-            <div className="space-y-4 lg:space-y-6">
+            <div className="space-y-2 lg:space-y-6">
               {/* Greeting */}
               <div className="animate-fade-in-up opacity-0" style={{ animationDelay: "0.2s" }}>
                 <p className="text-base sm:text-lg lg:text-xl text-gray-900 font-medium">
@@ -47,7 +47,7 @@ const Hero = () => {
 
               {/* Name */}
               <div className="animate-fade-in-up opacity-0" style={{ animationDelay: "0.4s" }}>
-                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-blue-600 mb-3 lg:mb-4 leading-tight">
+                <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-blue-600 mb-3 lg:mb-4 leading-tight">
                   / Fahlevi Afghani /
                 </h1>
               </div>

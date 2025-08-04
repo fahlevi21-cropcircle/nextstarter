@@ -81,19 +81,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "hello@example.com",
-      href: "mailto:hello@example.com"
+      value: "fahleviafghani21@gmail.com",
+      href: "mailto:fahleviafghani21@gmail.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+62 812-3456-7890",
-      href: "tel:+6281234567890"
+      value: "+62 878-4411-5199",
+      href: "tel:+6287844115199"
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "Jakarta, Indonesia",
+      value: "Karawang, Jawa Barat",
       href: "#"
     }
   ];
@@ -290,7 +290,7 @@ const Contact = () => {
             <div className="border-t border-gray-800 pt-8">
               <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                 <div className="text-gray-400 text-sm">
-                  © 2024 Your Name. All rights reserved.
+                  © 2025 CropCircle Studio. All rights reserved.
                 </div>
                 <div className="text-gray-400 text-sm">
                   Code generated with ❤️ by{" "}

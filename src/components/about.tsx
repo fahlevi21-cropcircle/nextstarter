@@ -146,11 +146,11 @@ const About = () => {
                         </li>
                         <li className="flex items-start space-x-2">
                           <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
-                          <span className="text-gray-700 text-sm">Graduated with honors (GPA: 3.8/4.0)</span>
+                          <span className="text-gray-700 text-sm">Conducted research in KEMENAG Kabupaten Karawang and developed a web application to enhance BIMWIN processes</span>
                         </li>
                         <li className="flex items-start space-x-2">
                           <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
-                          <span className="text-gray-700 text-sm">Active member of Computer Science Student Association</span>
+                          <span className="text-gray-700 text-sm">Studied human-computer interaction principles through UI/UX design practices.</span>
                         </li>
                       </ul>
                     </div>

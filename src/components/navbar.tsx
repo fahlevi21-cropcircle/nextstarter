@@ -61,6 +61,15 @@ const Navbar = () => {
     }
   };
 
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/CV_Fahlevi_072025.pdf';
+    link.download = 'CV_Fahlevi_072025.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const navItems = [
     { name: "Home", href: "#home", id: "home" },
     { name: "About", href: "#about", id: "about" },
@@ -87,7 +96,7 @@ const Navbar = () => {
                 e.preventDefault();
                 scrollToSection("home");
               }}
-              className="hidden lg:flex flex-col text-sm font-bold text-blue-600 hover:text-blue-700 transition-all duration-300"
+              className="hidden lg:flex flex-col text-sm font-bold transition-all duration-300"
             >
               <p className='my-0'>CropCircle Studio</p>
               <p className='my-0'>Portfolio</p>
@@ -121,7 +130,11 @@ const Navbar = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-3">
-            <Button variant="outline" className="border-gray-300 text-gray-700 hover:border-blue-600 hover:text-blue-600 transition-all duration-300 hover:scale-105">
+            <Button 
+              variant="outline" 
+              className="border-gray-300 text-gray-700 hover:border-blue-600 hover:text-blue-600 transition-all duration-300 hover:scale-105"
+              onClick={handleDownloadCV}
+            >
               <Download className="mr-2 h-4 w-4" />
               Download CV
             </Button>
@@ -174,7 +187,11 @@ const Navbar = () => {
             </a>
           ))}
           <div className="pt-4 space-y-3">
-            <Button variant="outline" className="w-full border-gray-300 text-gray-700 hover:border-blue-600 hover:text-blue-600">
+            <Button 
+              variant="outline" 
+              className="w-full border-gray-300 text-gray-700 hover:border-blue-600 hover:text-blue-600"
+              onClick={handleDownloadCV}
+            >
               <Download className="mr-2 h-4 w-4" />
               Download CV
             </Button>

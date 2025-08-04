@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { 
+import {
   Calendar,
   MapPin,
   Building2,
@@ -36,70 +36,68 @@ const Experiences = () => {
 
   const experiences = [
     {
-      title: "Senior Software Engineer",
-      company: "TechCorp Solutions",
-      location: "Jakarta, Indonesia",
-      period: "2023 - Present",
-      type: "Full-time",
-      description: "Leading development of enterprise-level applications using modern technologies. Mentoring junior developers and implementing best practices for code quality and performance.",
+      title: "Business Application Developer",
+      company: "PT. Indopoly Swakarsa Industry Tbk.",
+      location: "Purwakarta, Jawa Barat",
+      period: "Jan 2025 - Present",
+      type: "Contract",
+      description: "Involved in the development of an integrated, data-centralized ERP system, contributing to multiple platforms including web, mobile, and desktop applications. Collaborated closely with cross-functional teams to deliver scalable business solutions aligned with company standards",
       achievements: [
-        "Led a team of 5 developers in building a comprehensive e-commerce platform",
-        "Improved application performance by 40% through optimization techniques",
-        "Implemented CI/CD pipelines reducing deployment time by 60%",
-        "Mentored 3 junior developers and conducted code reviews"
+        "Consistently adhered to company coding guidelines and development SOPs",
+        "Improved overall code quality through refactoring and best practices",
+        "Enhanced application performance across platforms",
+        "Maintained high performance with an average KPI score above 90%"
       ],
-      technologies: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Docker", "AWS"],
+      technologies: ["ReactJS", "C#", "WinForms", "Flutter", "ASP.NET", "SQL Server"],
       icon: Building2,
       color: "bg-blue-100 text-blue-600"
     },
     {
       title: "Full Stack Developer",
-      company: "InnovateLab",
-      location: "Bandung, Indonesia",
-      period: "2021 - 2023",
-      type: "Full-time",
-      description: "Developed and maintained multiple web applications using React and Node.js. Collaborated with cross-functional teams to deliver high-quality software solutions.",
+      company: "PT. Namina Solusi Telematika",
+      location: "Jakarta Selatan, Jawa Barat",
+      period: "Jan 2023 - Dec 2024",
+      type: "Contract",
+      description: "Working in client company PT Asahimas Flat Glass Tbk. Cikampek and played a key role in the application migration to a modern tech stack, contributing to the development of impactful projects across web and mobile platforms. Actively involved in both frontend and backend improvements, ensuring scalability, performance, and user satisfaction.",
       achievements: [
-        "Built 3 client-facing applications with 99.9% uptime",
-        "Reduced bug reports by 50% through improved testing practices",
-        "Integrated third-party APIs and payment gateways",
-        "Participated in agile development processes"
+        "Revamped the UI/UX of the company’s web application for a more intuitive user experience",
+        "Boosted mobile app rating from 2.8 to 3.9 on the Play Store and improved stability on iOS",
+        "Optimized SQL queries for large datasets, significantly reducing load times",
+        "Delivered projects efficiently using Agile methodology and strong team collaboration"
       ],
-      technologies: ["React", "Node.js", "MongoDB", "Express", "Redux", "Jest"],
+      technologies: ["Angular", "Typescript", "C#", "SQL Server", "EF Core", "Flutter"],
       icon: Code2,
       color: "bg-green-100 text-green-600"
     },
     {
-      title: "Frontend Developer",
-      company: "Digital Dynamics",
-      location: "Surabaya, Indonesia",
-      period: "2020 - 2021",
-      type: "Full-time",
-      description: "Specialized in creating responsive and user-friendly web interfaces. Worked closely with designers to implement pixel-perfect designs.",
+      title: "Backend Developer Intern",
+      company: "PT. Citiasia Inc.",
+      location: "Jakarta Selatan, Jawa Barat",
+      period: "Aug 2021 - Feb 2022",
+      type: "Remote",
+      description: "Participated in the Ministry of Education’s Kampus Merdeka Batch 1 program, contributing to the development of a major online survey platform. As a student intern, I gained hands-on experience in backend development while also expanding into full-stack responsibilities.",
       achievements: [
         "Developed 5 responsive web applications",
         "Improved user experience scores by 35%",
         "Optimized website loading speed by 45%",
         "Collaborated with UX/UI designers on design systems"
       ],
-      technologies: ["React", "JavaScript", "HTML", "CSS", "Sass", "Webpack"],
+      technologies: ["Laravel", "JavaScript", "HTML", "CSS", "PHP", "cPanel", "MySQL"],
       icon: Briefcase,
       color: "bg-purple-100 text-purple-600"
     },
     {
-      title: "Junior Developer",
-      company: "StartupHub",
-      location: "Yogyakarta, Indonesia",
-      period: "2019 - 2020",
-      type: "Full-time",
-      description: "Started career as a junior developer, learning modern web development practices and contributing to various projects.",
+      title: "IT Support Intern",
+      company: "PT. Asri Pancawarna",
+      location: "Cikampek, Jawa Barat",
+      period: "Aug 2017 - Oct 2017",
+      type: "Contract",
+      description: "Provided technical support for hardware and software issues, including printer repairs, software installations, and server PC setup. Assisted in ensuring smooth IT operations across the organization.",
       achievements: [
-        "Contributed to 2 major project releases",
-        "Learned modern development workflows and tools",
-        "Participated in code reviews and team meetings",
-        "Built foundational knowledge in web development"
+        "Responded quickly to user-reported issues, minimizing downtime",
+        "Trained users on proper software usage to improve efficiency and reduce recurring problems"
       ],
-      technologies: ["JavaScript", "HTML", "CSS", "PHP", "MySQL", "Git"],
+      technologies: [],
       icon: Users,
       color: "bg-orange-100 text-orange-600"
     }
@@ -119,7 +117,7 @@ const Experiences = () => {
               Work Experience
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              My professional journey in software development, from junior developer to senior engineer
+              A software development journey that began with no coding knowledge, evolving into an experienced developer through consistent learning and hands-on experience at every stage.
             </p>
             <div className="w-20 h-1 bg-blue-600 rounded-full mx-auto mt-6"></div>
           </div>
@@ -127,27 +125,26 @@ const Experiences = () => {
           {/* Timeline */}
           <div className="relative animate-fade-in-up opacity-0" style={{ animationDelay: "0.4s" }}>
             {/* Timeline Line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-200 lg:left-1/2 lg:transform lg:-translate-x-px"></div>
+            <div className="absolute left-3 top-0 bottom-0 w-0.5 bg-blue-200 lg:left-1/2 lg:transform lg:-translate-x-px"></div>
 
             {/* Experience Items */}
             <div className="space-y-12">
               {experiences.map((experience, index) => {
                 const IconComponent = experience.icon;
                 const isEven = index % 2 === 0;
-                
+
                 return (
                   <div
                     key={experience.title + experience.company}
-                    className={`relative flex items-start ${
-                      isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'
-                    }`}
+                    className={`relative flex items-start ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'
+                      }`}
                     style={{ animationDelay: `${0.6 + index * 0.2}s` }}
                   >
                     {/* Timeline Dot */}
-                    <div className="absolute left-8 top-6 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg lg:left-1/2 lg:transform lg:-translate-x-2"></div>
+                    <div className="absolute left-1 top-6 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg lg:left-1/2 lg:transform lg:-translate-x-2"></div>
 
                     {/* Content Card */}
-                    <div className={`ml-16 lg:ml-0 lg:w-5/12 ${isEven ? 'lg:mr-auto lg:pr-8' : 'lg:ml-auto lg:pl-8'}`}>
+                    <div className={`ml-8 lg:ml-0 lg:w-5/10 ${isEven ? 'lg:mr-auto lg:pr-8' : 'lg:ml-auto lg:pl-8'}`}>
                       <div className="bg-white rounded-2xl border border-gray-100 p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300">
                         {/* Header */}
                         <div className="flex items-start space-x-4 mb-6">
@@ -158,7 +155,7 @@ const Experiences = () => {
                             <h3 className="text-xl font-bold text-gray-900 mb-1">
                               {experience.title}
                             </h3>
-                            <div className="flex items-center space-x-4 text-sm text-gray-600 mb-2">
+                            <div className="flex flex-col space-y-1 text-sm text-gray-600 mb-2">
                               <div className="flex items-center space-x-1">
                                 <Building2 className="w-4 h-4" />
                                 <span>{experience.company}</span>
@@ -168,7 +165,7 @@ const Experiences = () => {
                                 <span>{experience.location}</span>
                               </div>
                             </div>
-                            <div className="flex items-center space-x-4 text-sm">
+                            <div className="flex items-center gap-4 text-sm">
                               <div className="flex items-center space-x-1 text-blue-600">
                                 <Calendar className="w-4 h-4" />
                                 <span>{experience.period}</span>
@@ -202,7 +199,7 @@ const Experiences = () => {
                         </div>
 
                         {/* Technologies */}
-                        <div>
+                        {experience.technologies.length > 0 && <div>
                           <h4 className="text-lg font-semibold text-gray-900 mb-3 flex items-center space-x-2">
                             <TrendingUp className="w-5 h-5 text-blue-600" />
                             <span>Technologies Used</span>
@@ -217,7 +214,7 @@ const Experiences = () => {
                               </span>
                             ))}
                           </div>
-                        </div>
+                        </div>}
                       </div>
                     </div>
                   </div>
